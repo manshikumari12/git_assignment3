@@ -1,22 +1,22 @@
 
 function checkprime(num){
     let count=0
-    for(let i=0;i<=num;i++){
+    for(let i=1;i<=num;i++){
         if(num%i==0){
             count++;
         }
     }
     if(count==2)
     {
-        return fasle;
+        return true;
     }
    else{
-        return true;
+        return false;
      }
     
 }
-for(let i=1;i<=num;i++){
-    let output = checkprime(num)
+for(let i=1;i<=16;i++){
+    let output = checkprime(i)
     if(output===true){
         console.log(i,' is a Prime Number ')
     }else{
